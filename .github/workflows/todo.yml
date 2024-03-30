@@ -15,7 +15,8 @@ jobs:
 
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: artimus47/images:todo-app
+        image: artimus47/images
+        tag: todo-app
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
